@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="./response.html" target="_blank" name="biodata" method="get"></form>
+    <fieldset>
+        <legend>Biodata</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required /><br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" required /><br><br>
+        <label for="tel">Phone:</label>
+        <input type="tel" name="tel" placeholder="Enter your phone number" required /><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required /><br><br>
+
+        <!-- In email validation is @ and . if not present in email it shows error that's why it is important to write type="email" -->
+
+
+        <label for="attempt">Attempt:</label>
+        <input type="number" id="attempt" name="attempt" min="1" max="3" required /><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" required />
+        <label for="female">Female</label>
+        <br><br>
+        <label for="check">Vehicle you have</label>
+        <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+        <label for="bike">Bike</label>
+        <input type="checkbox" name="vehicle2" id="car" value="Car" />
+        <label for="car">Car</label>
+        <br><br>
+
+        <label for="lang">Select your programming language</label>
+        <select name="lang" id="lang">
+            <option>Select your language</option>
+            <optgroup label="Programming language">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="java">Java</option>
+            </optgroup>
+            <optgroup label="fronted Technologies">
+                <option value="HTML">HTML</option>
+                <option value="css">CSS</option>
+                <option value="ruby">Ruby</option>
+            </optgroup>
+        </select><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password" required /><br><br>
+        <label for="appoint">Appointment:</label>
+        <input type="number" name="appoint" id="appoint" required /><br><br>
+        <label for="file">Upload your file:</label>
+        <input type="file" name="file" id="file" required /><br><br>
+
+        <label for="add">Address:</label>
+        <textarea name="text" id="add" rows="3" coloum="5">Enter your address</textarea>
+        <br><br>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+    </fieldset>
+
+</body>
+
+</html>
